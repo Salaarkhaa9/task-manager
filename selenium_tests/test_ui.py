@@ -20,7 +20,7 @@ def driver():
 
 def test_page_title_and_header(driver):
     driver.get(APP_URL)
-    assert "Simple Web App" in driver.title
+    assert "Task Manager" in driver.title
     header = driver.find_element(By.ID, "header")
     assert header.text == "Item List"
 
